@@ -1,9 +1,18 @@
 array = [1, 1]
-for i in 1..100
-  s1 = array[i]
-  s2 = array[i-1]
-  array.push (s1+s2)
-  i += 1
+i = 1
+while array[i] < 100
+ s = array[i] + array [i-1]
+ array << s.to_i
+ i = i + 1
 end
-puts array
+puts "array while = #{array[0..i-1]}"
 
+array = [1, 1]
+i = 1
+loop do
+  break if array[i] > 100
+  s = array[i] + array [i-1]
+  array << s.to_i
+  i = i + 1
+end
+puts "array loop = #{array[0..i-1]}"

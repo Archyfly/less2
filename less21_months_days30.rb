@@ -15,4 +15,3 @@ months_days = {
 months_days.each do |month, days|
   puts "#{days} in #{month}" if months_days[month] == 30 
 end
-
